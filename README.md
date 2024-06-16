@@ -40,9 +40,12 @@ Dataset columns:
 ### Job titles 
 <img width="669" alt="image" src="https://github.com/Negar86/Project2/assets/160590005/c4dbddf6-a765-4dc2-bb29-509a77df3fc0">
 
-<img width="633" alt="image" src="https://github.com/Negar86/Project2/assets/160590005/18b3f6bb-dfee-4220-ba59-66d155eee04b">
+<img width="646" alt="image" src="https://github.com/Negar86/Project2/assets/160590005/4deb590f-ecd2-43bc-a4a9-c8471133bfd2">
+
 ---
+
 ### Salary Distribution by Job titles and experience level 
+![image](https://github.com/Negar86/Project2/assets/160590005/effb78a8-c04b-414c-ac41-201a207e8e2c)
 
 
 ---
@@ -74,13 +77,22 @@ There is association between the Company size & Exp level but the correlation is
 ---
 
 ## ML (Machine Learning)
+For predicting salay below models are tested and results are as below table:
+![image](https://github.com/Negar86/Project2/assets/160590005/6bcf290e-fa82-4b3f-9def-111df992d769)
+
+The Ridge regression model explains around 27.33% of the variance in salary prices (R² = 0.2733). However, the prediction errors are relatively large, with an average absolute error of about 41,987 Euro(MAE) and a typical prediction error of about 58,756 Euro (RMSE). The high MSE value also indicates significant prediction errors. These metrics suggest that while the model provides some predictive capability, its accuracy and explanatory power are limited, indicating room for improvement.
+
+<img width="585" alt="image" src="https://github.com/Negar86/Project2/assets/160590005/4780857c-5ec2-4e6e-9bce-611d2431ce8e">
+
+----
+### Dealing with outliers:
 
 
+After removing the outliers based on the first and third quartiles of the salary data:
 
+- The model's explanatory power has improved, with R² increasing to 32.69% from 27.33%.      
+- The prediction errors have reduced, as indicated by lower RMSE, MSE, and MAE values. The typical prediction error (RMSE) has decreased by approximately 11,204 Euro, and the average absolute error (MAE) has decreased by around 3,965 Euro.   
+These improvements suggest that removing the outliers has resulted in a more accurate and reliable model for predicting salary prices, though there is still room for further enhancement.
 
-
-
-
-
-
+<img width="574" alt="image" src="https://github.com/Negar86/Project2/assets/160590005/e04e820e-a908-4212-bbd3-dda1059b827b">
 
